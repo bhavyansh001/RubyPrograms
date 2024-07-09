@@ -1,26 +1,25 @@
 class FibonacciAlgorithm
-    def call
-        puts "Fibonacci algorithm!"
-        sequence_size
-        length
-        first_two
-        fib_array
-    end
+  def call
+    puts "Fibonacci algorithm!"
+    sequence_size
+    first_two
+    fib_array
+  end
 
-    private
-def sequence_size
+  private
+  def sequence_size
     print "Enter the number of digits you wish to see in the sequence: "
     @length = gets.to_i
-end
-def first_two
+  end
+
+  def first_two
     print "Enter the first digit of sequence: "
     @first_digit = gets.to_i
     print "Enter the second digit: "
     @second_digit = gets.to_i
+  end
 
-end
-
-def fib_array
+  def fib_array
     fibArray = Array.new
     fibArray[0] = @first_digit
     fibArray[1] = @second_digit
@@ -31,7 +30,7 @@ def fib_array
     end
     p fibArray
     fibArray
-end
+  end
 
 end
 
